@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 
         if randIntLeft == 1 && randIntRight == 1 {
             print("SNAKE EYES")
-            createAlert(title: "SNAKE EYES", message: "Hell ye")
+            createAlert(title: "SNAKE EYES", message: "Do it. You won't.")
         }
         
     }
