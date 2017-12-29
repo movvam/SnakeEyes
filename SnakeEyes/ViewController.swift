@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         
         if randIntLeft == 1 && randIntRight == 1 {
             
-            let randIntMessage = arc4random_uniform(2) + 1
+            let randIntMessage = arc4random_uniform(2) 
                     if randIntMessage == 1{
                         messageLine = "Bruh....."
                     } else{
