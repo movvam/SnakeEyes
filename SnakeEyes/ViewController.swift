@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
 
     
@@ -17,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var RightDice: UITextField!
     
-    var messageLine: String = "Do it. You wont."
+    var messageLine: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,15 +46,16 @@ class ViewController: UIViewController {
         
         LeftDice.text = "\(randIntLeft)"
         RightDice.text = "\(randIntRight)"
-
-//        let randIntMessage = arc4random_uniform(2) + 1
-//        if randIntMessage == 1{
-//            messageLine: String = "Bruh....."
-//        } else{
-//            messageLine = "Do it. You won't."
-//        }
         
         if randIntLeft == 1 && randIntRight == 1 {
+            
+            let randIntMessage = arc4random_uniform(2) + 1
+                    if randIntMessage == 1{
+                        messageLine = "Bruh....."
+                    } else{
+                        messageLine = "Do it. You won't."
+                    }
+            
             print("SNAKE EYES")
             
             createAlert(title: "SNAKE EYES", message: messageLine)
