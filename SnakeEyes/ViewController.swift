@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var RightDice: UITextField!
     
     var messageLine: String = ""
+    // messageLine is a String representing the message the user sees when rolling a snake eyes.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class ViewController: UIViewController {
     }
 
     func createAlert (title: String, message: String){
+        // creates an animated alert
+        
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
@@ -42,18 +45,20 @@ class ViewController: UIViewController {
         
         let randIntLeft = arc4random_uniform(6) + 1
         let randIntRight = arc4random_uniform(6) + 1
+        // randIntLeft and Right are random integers representing a number on a dice
         
         LeftDice.text = "\(randIntLeft)"
         RightDice.text = "\(randIntRight)"
+        // sets text fields of the dice to the rolled random integers
         
-        if randIntLeft == 1 && randIntRight == 1 {
+        if randIntLeft == 1 && randIntRight == 1 {          // if snake eyes
             
-            let randIntMessage = arc4random_uniform(2) 
+            let randIntMessage = arc4random_uniform(2)
                     if randIntMessage == 1{
                         messageLine = "Bruh....."
                     } else{
                         messageLine = "Do it. You won't."
-                    }
+                    }           // Uses a random integer to select the message on the alert
             
             print("SNAKE EYES")
             
