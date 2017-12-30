@@ -59,9 +59,7 @@ class ViewController: UIViewController {
                     } else{
                         messageLine = "Do it. You won't."
                     }           // Uses a random integer to select the message on the alert
-            
-            print("SNAKE EYES")
-            
+                        
             createAlert(title: "SNAKE EYES", message: messageLine)
         }
         
