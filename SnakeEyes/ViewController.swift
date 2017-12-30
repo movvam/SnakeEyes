@@ -1,18 +1,17 @@
-//
-//  ViewController.swift
-//  SnakeEyes
-//
-//  Created by Manikanth Movva on 12/12/17.
-//  Copyright © 2017 Manikanth Movva. All rights reserved.
-//
+/**
+  ViewController.swift
+  SnakeEyes
+
+  Created by Manikanth Movva on 12/12/17.
+  Copyright © 2017 Manikanth Movva. All rights reserved.
+*/
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    
+    // var links to left and right dice text fields
     @IBOutlet weak var LeftDice: UITextField!
-    
     @IBOutlet weak var RightDice: UITextField!
     
     var messageLine: String = ""
