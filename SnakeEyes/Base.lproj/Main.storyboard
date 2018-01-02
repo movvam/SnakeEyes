@@ -23,18 +23,18 @@
                                 <rect key="frame" x="20" y="120" width="335" height="123.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="zK3-Ok-kTw">
-                                        <rect key="frame" x="74.5" y="0.0" width="186" height="123.5"/>
+                                        <rect key="frame" x="91.5" y="0.0" width="152" height="123.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="--" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-vV-BL1">
-                                                <rect key="frame" x="0.0" y="0.0" width="73" height="123.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="--" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-vV-BL1">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="123.5"/>
                                                 <color key="backgroundColor" red="1" green="0.66739232466499043" blue="0.37482906321298404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="1" green="0.66739232469999998" blue="0.37482906319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="--" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1j3-Ax-tCP">
-                                                <rect key="frame" x="113" y="0.0" width="73" height="123.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="--" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1j3-Ax-tCP">
+                                                <rect key="frame" x="96" y="0.0" width="56" height="123.5"/>
                                                 <color key="backgroundColor" red="1" green="0.66739232466499043" blue="0.37482906321298404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="1" green="0.66739232469999998" blue="0.37482906319999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
