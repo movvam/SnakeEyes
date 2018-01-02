@@ -7,8 +7,11 @@
 */
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var player: AVAudioPlayer = AVAudioPlayer()
 
     // var links to left and right dice text fields
     @IBOutlet weak var LeftDice: UITextField!
@@ -17,15 +20,25 @@ class ViewController: UIViewController {
     var messageLine: String = ""
     // messageLine is a String representing the message the user sees when rolling a snake eyes.
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func prepareAudio(filename: String){
+        do{
+            let audioPath = Bundle.main.path(forResource: filename, ofType: ".mp3")
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            
+        }catch{
+            print("error")
+        }
     }
 
     func createAlert (title: String, message: String){
@@ -42,6 +55,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func DiceRolled(_ sender: Any) {
+        
+        prepareAudio(filename: "diceRoll")
+        player.play()
         
         let randIntLeft = arc4random_uniform(6) + 1
         let randIntRight = arc4random_uniform(6) + 1
