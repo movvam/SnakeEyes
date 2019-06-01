@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import AudioToolbox
 
 class ViewController: UIViewController {
     
@@ -76,9 +75,7 @@ class ViewController: UIViewController {
                     } else{
                         messageLine = "Do it. You won't."
                     }           // Uses a random integer to select the message on the alert
-            
-            AudioServicesPlaySystemSound(SystemSoundID (kSystemSoundID_Vibrate))
-            
+                        
             createAlert(title: "SNAKE EYES", message: messageLine)
         }
         
